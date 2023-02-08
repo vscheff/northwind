@@ -1,0 +1,347 @@
+Script started on 2022-11-19 21:30:11-05:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="117" LINES="55"]
+]0;vscheff@HP-Mint: ~/Desktop/cs4430/CS4430-A4-DBProgramming/assignment_4[01;32mvscheff@HP-Mint[00m:[01;34m~/Desktop/cs4430/CS4430-A4-DBProgramming/assignment_4[00m$ mysql -u cs4430 -p northwind < northwind-backup.sql
+Enter password: 
+]0;vscheff@HP-Mint: ~/Desktop/cs4430/CS4430-A4-DBProgramming/assignment_4[01;32mvscheff@HP-Mint[00m:[01;34m~/Desktop/cs4430/CS4430-A4-DBProgramming/assignment_4[00m$ python --version3 --version
+Python 3.8.10
+]0;vscheff@HP-Mint: ~/Desktop/cs4430/CS4430-A4-DBProgramming/assignment_4[01;32mvscheff@HP-Mint[00m:[01;34m~/Desktop/cs4430/CS4430-A4-DBProgramming/assignment_4[00m$ pip -V
+pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+]0;vscheff@HP-Mint: ~/Desktop/cs4430/CS4430-A4-DBProgramming/assignment_4[01;32mvscheff@HP-Mint[00m:[01;34m~/Desktop/cs4430/CS4430-A4-DBProgramming/assignment_4[00m$ pip install mysql-connector-python
+Requirement already satisfied: mysql-connector-python in /home/vscheff/.local/lib/python3.8/site-packages (8.0.31)
+Requirement already satisfied: protobuf<=3.20.1,>=3.11.0 in /home/vscheff/.local/lib/python3.8/site-packages (from mysql-connector-python) (3.20.1)
+]0;vscheff@HP-Mint: ~/Desktop/cs4430/CS4430-A4-DBProgramming/assignment_4[01;32mvscheff@HP-Mint[00m:[01;34m~/Desktop/cs4430/CS4430-A4-DBProgramming/assignment_4[00m$ python3 ./a3.py
+[H[2J[3J
+███╗   ██╗ ██████╗ ██████╗ ████████╗██╗  ██╗██╗    ██╗██╗███╗   ██╗██████╗ 
+████╗  ██║██╔═══██╗██╔══██╗╚══██╔══╝██║  ██║██║    ██║██║████╗  ██║██╔══██╗
+██╔██╗ ██║██║   ██║██████╔╝   ██║   ███████║██║ █╗ ██║██║██╔██╗ ██║██║  ██║
+██║╚██╗██║██║   ██║██╔══██╗   ██║   ██╔══██║██║███╗██║██║██║╚██╗██║██║  ██║
+██║ ╚████║╚██████╔╝██║  ██║   ██║   ██║  ██║╚███╔███╔╝██║██║ ╚████║██████╔╝
+╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚═════╝ 
+
+Welcome to the Northwind Frontend UI!
+
+ _________________________ 
+|                         |
+| 1. Add a Customer       |
+| 2. Add an Order         |
+| 3. Remove an Order      |
+| 4. Ship an Order        |
+| 5. Print Pending Orders |
+| 6. More Options         |
+| 7. Exit                 |
+|_________________________|
+
+Please input an option: 1
+[H[2J[3JPlease input the following information to add a customer to the database:
+
+Input Company: WMU
+Input Last Name: Scheffler
+Input First Name: Von
+Input E-Mail: von.s.ch  scheffler@wmich.edu
+Input Job Title: Supplm ementary Insr  structor
+Input Business Phone: (269) 555-3204
+Input Home Phone: 
+Input Mobile Phone: 
+Input Fax: (555) 555-  5-3111
+Input Address: 6239 American Ave
+Input City: Kal   Portage
+Input State: MI
+Input ZIP: 49009 2
+Input Country: USA
+Input Website: 
+Input Customer Notes: 
+
+Customer #30 successfully added to the database!
+
+ _________________________ 
+|                         |
+| 1. Add a Customer       |
+| 2. Add an Order         |
+| 3. Remove an Order      |
+| 4. Ship an Order        |
+| 5. Print Pending Orders |
+| 6. More Options         |
+| 7. Exit                 |
+|_________________________|
+
+Please input an option: 2
+[H[2J[3JPlease input the following information to add an order to the database: 
+
+Input Employee ID: 3
+Input Customer ID: 99
+ERROR: Invalid Customer ID!
+Input Customer ID: abc
+ERROR: Invalid Customer ID!
+Input Customer ID: 3
+Input Taxes: 
+Input Payment Type: test
+ERROR: Invalid Payment Type. Please input 'Check', 'Credit Card', or 'Cash'
+Input Payment Type: Check
+Input Payment Date: 2010-abc
+ERROR: Bad Date! Please input date in the format YYYY-MM-DD
+Input Payment Date: 2010-01
+ERROR: Bad Date! Please input date in the format YYYY-MM-DD
+Input Payment Date: 2010-01-01
+Input Order Notes: New Order for customer 3
+Input Tax Rate: 
+Input Tax Status ID: 
+
+Please input the following information to add an order item to the database: 
+
+Input Product ID: 1
+Input Quantity: 1
+Input Discount: 
+
+Order item #92 successfully added to the database!
+
+Add another order item? (y, n): y
+
+Please input the following information to add an order item to the database: 
+
+Input Product ID: 80
+Input Quantity: 2 1
+Input Discount: 
+
+Order item #93 successfully added to the database!
+
+Add another order item? (y, n): n
+
+Order #82 successfully added to the database!
+
+ _________________________ 
+|                         |
+| 1. Add a Customer       |
+| 2. Add an Order         |
+| 3. Remove an Order      |
+| 4. Ship an Order        |
+| 5. Print Pending Orders |
+| 6. More Options         |
+| 7. Exit                 |
+|_________________________|
+
+Please input an option: 5
+[H[2J[3J
+ Order Employee Customer  Order Date        Name        Ship To Address      City      State   ZIP   Country 
+ ----- -------- -------- ------------ ---------------- ----------------- ------------- ----- ------- -------
+  41       1       7      2006-03-24    Ming-Yang Xie   123 7th Street    Boise          ID   99999    USA
+  43       1       11     2006-03-24    Peter Krschne   123 11th Street   Miami          FL   99999    USA
+  44       1       1      2006-03-24    Anna Bedecs     123 1st Street    Seattle        WA   99999    USA
+  80       2       4      2006-04-25    Christina Lee   123 4th Street    New York       NY   99999    USA
+  81       2       3      2006-04-25    Thomas Axen     123 3rd Street    Los Angelas    CA   99999    USA
+  68       1       7      2006-05-24    Ming-Yang Xie   123 7th Street    Boise          ID   99999    USA
+  69       1       10     2006-05-24    Roland Wacker   123 10th Street   Chicago        IL   99999    USA
+  70       1       11     2006-05-24    Peter Krschne   123 11th Street   Miami          FL   99999    USA
+  71       1       1      2006-05-24    Anna Bedecs     123 1st Street    Seattle        WA   99999    USA
+  82       3       3      2022-11-19    Thomas Axen     123 3rd Street    Los Angelas    CA   99999    USA
+
+ _________________________ 
+|                         |
+| 1. Add a Customer       |
+| 2. Add an Order         |
+| 3. Remove an Order      |
+| 4. Ship an Order        |
+| 5. Print Pending Orders |
+| 6. More Options         |
+| 7. Exit                 |
+|_________________________|
+
+Please input an option: 4
+[H[2J[3JInput the Order ID to be shipped: 82
+ERROR: Not enough stock for Product #1! Unable to ship Order #82
+
+ _________________________ 
+|                         |
+| 1. Add a Customer       |
+| 2. Add an Order         |
+| 3. Remove an Order      |
+| 4. Ship an Order        |
+| 5. Print Pending Orders |
+| 6. More Options         |
+| 7. Exit                 |
+|_________________________|
+
+Please input an option: 3
+[H[2J[3JInput the Order # to be deleted: 82
+Order with ID 82 successfully removed from the database!
+
+ _________________________ 
+|                         |
+| 1. Add a Customer       |
+| 2. Add an Order         |
+| 3. Remove an Order      |
+| 4. Ship an Order        |
+| 5. Print Pending Orders |
+| 6. More Options         |
+| 7. Exit                 |
+|_________________________|
+
+Please input an option: 2
+[H[2J[3JPlease input the following information to add an order to the database: 
+
+Input Employee ID: 3
+Input Customer ID: 3
+Input Taxes: 
+Input Payment Type: 
+Input Order Notes: 
+Input Tax Rate: 
+Input Tax Status ID: 
+
+Please input the following information to add an order item to the database: 
+
+Input Product ID: 3
+Input Quantity: 1
+Input Discount: 
+
+Order item #92 successfully added to the database!
+
+Add another order item? (y, n): n
+
+Order #82 successfully added to the database!
+
+ _________________________ 
+|                         |
+| 1. Add a Customer       |
+| 2. Add an Order         |
+| 3. Remove an Order      |
+| 4. Ship an Order        |
+| 5. Print Pending Orders |
+| 6. More Options         |
+| 7. Exit                 |
+|_________________________|
+
+Please input an option: 5
+[H[2J[3J
+ Order Employee Customer  Order Date        Name        Ship To Address      City      State   ZIP   Country 
+ ----- -------- -------- ------------ ---------------- ----------------- ------------- ----- ------- -------
+  41       1       7      2006-03-24    Ming-Yang Xie   123 7th Street    Boise          ID   99999    USA
+  43       1       11     2006-03-24    Peter Krschne   123 11th Street   Miami          FL   99999    USA
+  44       1       1      2006-03-24    Anna Bedecs     123 1st Street    Seattle        WA   99999    USA
+  80       2       4      2006-04-25    Christina Lee   123 4th Street    New York       NY   99999    USA
+  81       2       3      2006-04-25    Thomas Axen     123 3rd Street    Los Angelas    CA   99999    USA
+  68       1       7      2006-05-24    Ming-Yang Xie   123 7th Street    Boise          ID   99999    USA
+  69       1       10     2006-05-24    Roland Wacker   123 10th Street   Chicago        IL   99999    USA
+  70       1       11     2006-05-24    Peter Krschne   123 11th Street   Miami          FL   99999    USA
+  71       1       1      2006-05-24    Anna Bedecs     123 1st Street    Seattle        WA   99999    USA
+  82       3       3      2022-11-19    Thomas Axen     123 3rd Street    Los Angelas    CA   99999    USA
+
+ _________________________ 
+|                         |
+| 1. Add a Customer       |
+| 2. Add an Order         |
+| 3. Remove an Order      |
+| 4. Ship an Order        |
+| 5. Print Pending Orders |
+| 6. More Options         |
+| 7. Exit                 |
+|_________________________|
+
+Please input an option: 4
+[H[2J[3JInput the Order ID to be shipped: 82
+Input Transaction Comments: 
+ERROR: NULL value not allowed for this field.
+Input Transaction Comments: Shipping Order 82
+Input Shipper ID: 10
+ERROR: Invalid Shipper Id!
+Input Shipper ID: 3
+Input Shipping Fee: 2 -1
+ERROR: Invalid Input! Please enter only non-negative numbers.
+Input Shipping Fee: 20
+Order #82 successfully shipped!
+
+ _________________________ 
+|                         |
+| 1. Add a Customer       |
+| 2. Add an Order         |
+| 3. Remove an Order      |
+| 4. Ship an Order        |
+| 5. Print Pending Orders |
+| 6. More Options         |
+| 7. Exit                 |
+|_________________________|
+
+Please input an option: 6
+[H[2J[3J _________________________ 
+|                         |
+| 1. Remove a Customer    |
+| 2. Add an Employee      |
+| 3. Main Menu            |
+|_________________________|
+
+Please input an option: 1
+[H[2J[3JInput the Customer # to be deleted: 3
+ERROR: Customer #3 has Orders in the DB! Unable to remove customer.
+ _________________________ 
+|                         |
+| 1. Remove a Customer    |
+| 2. Add an Employee      |
+| 3. Main Menu            |
+|_________________________|
+
+Please input an option: 1
+[H[2J[3JInput the Customer # to be deleted: 30
+Customer #30 successfully removed from the database!
+ _________________________ 
+|                         |
+| 1. Remove a Customer    |
+| 2. Add an Employee      |
+| 3. Main Menu            |
+|_________________________|
+
+Please input an option: 2
+[H[2J[3JPlease input the following information to add an Employee to the database (* = required): 
+
+* Input Last Name: Scheffler
+* Input First Name: 
+ERROR: NULL value not allowed for this field.
+* Input First Name: Von
+* Input Email: von.s.scheffler@m wmich.edu
+* Input Job Title: Supplemn entary Instructor
+* Input Business Phone: 555-2030
+* Input Home Phone: 555-2020
+  Input Mobile Phone: 
+* Input Address: 6239
+* Input City: American Av           K Portage
+* Input State: MI
+* Input ZIP: 49009
+* Input Country: USA
+  Input Notes: 
+
+Add Privileges for this Employee? (y/n): y
+Input Privilege ID: 3
+ERROR: No Priviledge with ID 3 found!
+
+Add Privileges for this Employee? (y/n): y
+Input Privilege ID: 2
+Priviledge successfully added!
+
+Add Privileges for this Employee? (y/n): y
+Input Privilege ID: 2
+ERROR: Privilege #2 already added!
+
+Add Privileges for this Employee? (y/n): n
+Employee #10 successfully added to the DB!
+ _________________________ 
+|                         |
+| 1. Remove a Customer    |
+| 2. Add an Employee      |
+| 3. Main Menu            |
+|_________________________|
+
+Please input an option: 3
+
+ _________________________ 
+|                         |
+| 1. Add a Customer       |
+| 2. Add an Order         |
+| 3. Remove an Order      |
+| 4. Ship an Order        |
+| 5. Print Pending Orders |
+| 6. More Options         |
+| 7. Exit                 |
+|_________________________|
+
+Please input an option: 1 7
+
+Goodbye!
+]0;vscheff@HP-Mint: ~/Desktop/cs4430/CS4430-A4-DBProgramming/assignment_4[01;32mvscheff@HP-Mint[00m:[01;34m~/Desktop/cs4430/CS4430-A4-DBProgramming/assignment_4[00m$ exit
+
+Script done on 2022-11-19 23:38:40-05:00 [COMMAND_EXIT_CODE="0"]
